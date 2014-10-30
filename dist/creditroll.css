@@ -7,20 +7,40 @@
 }
 
 .__creditroll__ {
-  margin  : 0;
-  padding : 0 0 200% 0;
+  position : relative;
+  margin : 0;
   width : 100%;
   min-height : 100%;
   position : fixed;
   background-color : black;
   z-index : 1000;
-  color : #fff;
 }
+
+#__creditrollVideo__{
+  position : absolute;
+  left : 50px;
+}
+
+.__creditroll__ .scroller{
+  padding-top : 100%;
+  width : 100%;
+  height : 100%;
+  position : relative;
+  z-index : 1001;
+  color : #fff;
+  text-shadow:
+    -2px 0 1px black,
+    0 2px 1px black,
+    2px 0 1px black,
+    0 -2px 1px black;
+}
+
 .__creditroll__ .box{
+  margin : 0 0 0 40%;
+  width : 60%;
   font-family: "ヒラギノ明朝 Pro W6","Hiragino Mincho Pro","HGS明朝E","ＭＳ Ｐ明朝",serif;
   font-size : 32px;
-  background-color : #111;
-  margin-top : 100px;
+  background-color : transparent;
   margin-bottom : 100px;
 }
 
@@ -58,4 +78,17 @@ __creditroll__ .box .left .inner,
 .__creditroll__ .box ul li{
   margin-bottom : 30px;
   list-style-type: none;
+}
+
+.__creditroll__ .credit{
+  position : relative;
+  width : 100%;
+  text-align : center;
+  font-family: "ヒラギノ明朝 Pro W6","Hiragino Mincho Pro","HGS明朝E","ＭＳ Ｐ明朝",serif;
+  font-size : 50px;
+  background-color : transparent;
+}
+
+.__creditroll__ .credit p{
+  line-height : 100%;
 }
